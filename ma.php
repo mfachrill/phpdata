@@ -13,7 +13,7 @@
         if ($_SERVER["REQUEST_METHOD"] == "POST") {
             for ($i = 1; $i <= 10; $i++) {
                 $input_name = "nilai_" . $i;
-                $nilai[$i - 1] = $_POST[$input_name];
+                $nilai[$i] = $_POST[$input_name];
             }
 
             $nilai_tertinggi = max($nilai);

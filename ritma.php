@@ -9,16 +9,16 @@
     <form method="post" action="">
         <label for="total_detik">Masukkan Total Detik:</label>
         <input type="number" name="total_detik" id="total_detik" required>
-        <button type="submit">Konversi</button>
+        <button type="submit">mengkonversi</button>
     </form>
 
     <?php
     if ($_SERVER["REQUEST_METHOD"] == "POST") {
         $total_detik = $_POST["total_detik"];
 
-        $jam = floor($total_detik / 3600);
+        $jam = ($total_detik / 3600);
         $sisa_detik = $total_detik % 3600;
-        $menit = floor($sisa_detik / 60);
+        $menit =  ($sisa_detik / 60);
         $detik = $sisa_detik % 60;
 
         echo "<h2>Hasil Konversi:</h2>";
