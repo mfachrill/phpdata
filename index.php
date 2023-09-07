@@ -1,5 +1,5 @@
 <?php
-// Array dengan beberapa bilangan acak
+
 $bilangan = [80, 75, 90, 87, 100, 99, ];
 
 
